@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControllingIos13ModalPresentationInXamarinForms.Views.ModalDisplayPage"
+             xmlns:vm="clr-namespace:ControllingIos13ModalPresentationInXamarinForms.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ModalDisplayViewModel />
+    </ContentPage.BindingContext>
+    <NavigationPage.TitleView>
+        <Grid CompressedLayout.IsHeadless="true">
+            <Button Text="Close"
+                    BorderColor="Transparent"
+                    Command="{Binding CloseCommand}"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    HorizontalOptions="Start"
+                    Margin="8,0,0,0"
+                    VerticalOptions="Center" />
+            <Label Text="{Binding Title}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="17" />
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     CompressedLayout.IsHeadless="True"
+                     Padding="16"
+                     Spacing="16">
+            <Label Text="This is a modal display page example"
+                   TextColor="{StaticResource PrimaryBrandColor}"
+                   VerticalOptions="Center" />
+            <Image Source="{Binding Image}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   WidthRequest="200"
+                   HeightRequest="200" />
+            <Button Text="Close Modal"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource PrimaryBrandColor}"
+                    Command="{Binding CloseCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

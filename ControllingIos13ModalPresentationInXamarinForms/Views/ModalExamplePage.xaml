@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ControllingIos13ModalPresentationInXamarinForms.Views.ModalExamplePage"
+             x:Name="BrowseItemsPage"
+             xmlns:vm="clr-namespace:ControllingIos13ModalPresentationInXamarinForms.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ModalExampleViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical"
+                 CompressedLayout.IsHeadless="True"
+                 Padding="16"
+                 Spacing="16">
+        <Grid CompressedLayout.IsHeadless="True">
+            <Label Text="Full screen modal"
+                   TextColor="{StaticResource PrimaryBrandColor}"
+                   HorizontalOptions="Start" />
+            <Switch IsToggled="{Binding UseIos13FullScreenModal}"
+                    HorizontalOptions="End" />
+        </Grid>
+        <Button Text="Open Modal"
+                TextColor="White"
+                BackgroundColor="{StaticResource PrimaryBrandColor}"
+                Command="{Binding DefaultCommand}" />
+    </StackLayout>
+</ContentPage>

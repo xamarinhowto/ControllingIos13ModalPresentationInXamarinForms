@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>MinimumOSVersion</key>
+	<string>9.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>InformationM8</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>App uses camera to scan data to populate fields.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App uses camera to scan data to populate fields.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App uses location data to find relevant nearby locations.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This App does not access the Contacts of the device.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>This App does not access the Calendars of the device.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This App does not access the Microphone of the device.</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This App does not access the Apple Music of the device.</string>
+	<key>NSSiriUsageDescription</key>
+	<string>This App does not use Siri of the device.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>This App does not access the Location Always functionality of the device.</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.xamarinhowto.ControllingIos13ModalPresentationInXamarinForms</string>
+	<key>CFBundleName</key>
+	<string>Ios13Modals</string>
+</dict>
+</plist>

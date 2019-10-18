@@ -1,13 +1,4 @@
-# Introduction 
-
-This solution contains a working example of iOS 13 full screen modal displays on older versions of Xamarin.Forms.
-# Outcome
-![Controlling iOS 13 modal presentation styles in Xamarin.Forms](ios13modalsfeature.jpg "Controlling iOS 13 modal presentation styles in Xamarin.Forms")
-
-
-# Usage 
-```csharp
-using System;
+﻿using System;
 using ControllingIos13ModalPresentationInXamarinForms.iOS.Renderers;
 using UIKit;
 using Xamarin.Forms;
@@ -41,4 +32,3 @@ namespace ControllingIos13ModalPresentationInXamarinForms.iOS.Renderers
         }
     }
 }
-```
