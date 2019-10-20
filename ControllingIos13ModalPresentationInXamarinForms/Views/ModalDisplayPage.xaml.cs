@@ -19,5 +19,15 @@ namespace ControllingIos13ModalPresentationInXamarinForms.Views
                 Navigation = Navigation,
             };
         }
+
+        protected override async void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            if (Navigation.ModalStack.Count > 0)
+            {
+                await Navigation.PopModalAsync();
+            }
+        }
     }
 }
